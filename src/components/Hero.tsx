@@ -29,7 +29,7 @@ const Hero = () => {
             <br /><br />
             I’m passionate about writing clean code, building
             reusable components, optimizing performance, and continuously improving my skills through learning, challenges, and hands-on development.
-            a developer and contributing to impactful projects.
+            I’m excited to grow as a developer and contribute to impactful projects.
           </p>
 
           {/* Buttons */}
