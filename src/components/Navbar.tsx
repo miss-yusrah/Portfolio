@@ -64,15 +64,15 @@ const Navbar: React.FC = () => {
         {/* Mobile menu: animated slide-down */}
         <div
           id="mobile-menu"
-          className={`md:hidden absolute left-0 right-0 top-full bg-transparent overflow-hidden transition-all duration-300 ease-in-out ${open ? 'max-h-60 opacity-100' : 'max-h-0 opacity-0'
+          className={`md:hidden absolute left-0 right-0 top-full bg-[#F5F3EB] rounded-b-xl shadow-lg overflow-hidden transition-all duration-300 ease-in-out ${open ? 'max-h-60 opacity-100' : 'max-h-0 opacity-0'
             }`}
           aria-hidden={!open}
         >
           <div className="flex flex-col p-4 gap-3">
-            <Link onClick={() => setOpen(false)} to="/about" className="text-[#191919] text-lg font-medium px-2 py-2 rounded hover:bg-[rgba(25,25,25,0.04)] hover:-translate-y-1 hover:scale-105 transition-transform duration-200">About</Link>
-            <Link onClick={() => setOpen(false)} to="/projects" className="text-[#191919] text-lg font-medium px-2 py-2 rounded hover:bg-[rgba(25,25,25,0.04)] hover:-translate-y-1 hover:scale-105 transition-transform duration-200">Projects</Link>
-            <Link onClick={() => setOpen(false)} to="/skills" className="text-[#191919] text-lg font-medium px-2 py-2 rounded hover:bg-[rgba(25,25,25,0.04)] hover:-translate-y-1 hover:scale-105 transition-transform duration-200">Skills</Link>
-            <Link onClick={() => setOpen(false)} to="/contact" className="text-[#191919] text-lg font-medium px-2 py-2 rounded hover:bg-[rgba(25,25,25,0.04)] hover:-translate-y-1 hover:scale-105 transition-transform duration-200">Contact</Link>
+            <Link onClick={() => setOpen(false)} to="/about" className="text-[#191919] text-lg font-medium px-2 py-2 rounded hover:bg-[rgba(25,25,25,0.04)] transition hover:underline">About</Link>
+            <Link onClick={() => setOpen(false)} to="/projects" className="text-[#191919] text-lg font-medium px-2 py-2 rounded hover:bg-[rgba(25,25,25,0.04)]transition hover:underline">Projects</Link>
+            <Link onClick={() => setOpen(false)} to="/skills" className="text-[#191919] text-lg font-medium px-2 py-2 rounded hover:bg-[rgba(25,25,25,0.04)] transition hover:underline">Skills</Link>
+            <Link onClick={() => setOpen(false)} to="/contact" className="text-[#191919] text-lg font-medium px-2 py-2 rounded hover:bg-[rgba(25,25,25,0.04)] transition hover:underline">Contact</Link>
           </div>
         </div>
       </nav>
