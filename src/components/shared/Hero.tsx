@@ -1,67 +1,65 @@
 import Button from "../ui/Button.tsx";
-import { useGSAP } from "@gsap/react";
-import gsap from "gsap";
+import { useSectionReveal } from "../../hooks/useSectionReveal";
 
 const Hero = () => {
-  useGSAP(() => {
-    const tl = gsap.timeline({
-      scrollTrigger: {
-        trigger: ".hero-section",
-        start: "top 80%",
-        end: "bottom 20%",
-        toggleActions: "play none none reverse",
-      },
-    });
-
-    tl.from(".hero-title", {
-      opacity: 0,
-      x: -50,
-      duration: 0.8,
-      ease: "power2.out",
-    })
-      .from(".hero-desc", { opacity: 0, y: 20, duration: 0.8 }, "-=0.5")
-      .from(".hero-buttons", { opacity: 0, y: 15, duration: 0.6 }, "-=0.3")
-      .from(".hero-img", { opacity: 0, x: 50, duration: 0.8 }, "-=0.3");
-  }, []);
+  useSectionReveal(".hero-section");
 
   return (
-    <section className="hero-section flex flex-col-reverse md:flex-row items-center justify-center bg-tetiary md:gap-50 md:mt-40 md:mx-30 p-5 md:p-10 ">
-      <div className="space-y-5 md:space-y-10">
-        <h1 className="hero-title font-bold text-3xl md:text-5xl text-center md:text-left text-primary mt-5 md:mt-0">
-          Hi, I'm Yusrah <br className="hidden md:block" />
-          Frontend Developer
-        </h1>
-        <p className="hero-desc text-secondary text-center md:text-left">
-          Passionate about building clean, responsive,
-          <br className="hidden md:block" /> and user-focused web interfaces.
-          <br className="hidden md:block" /> I specialize in HTML, CSS, JavaScript,
-          <br className="hidden md:block" /> TypeScript, React, and Tailwind CSS.
-        </p>
-        <div className="hero-buttons space-x-5 ml-5 md:ml-0">
-          <a
-            href="https://drive.google.com/file/d/1Jx4i8DuK_e6ERnQaCehi63Yc6O1jXz45/view?usp=sharing"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Button
-              title="View My CV"
-              containerClass="bg-primary text-white hover:scale-105 cursor-pointer hover:bg-blue-900 "
-            />
-          </a>
-          <a href="mailto:mohammedyusi6@gmail.com" target="_blank">
-            <Button
-              title="Contact Me"
-              containerClass="hover:scale-105 cursor-pointer hover:bg-primary hover:text-white "
-            />
-          </a>
+    <section className="hero-section pt-28 md:pt-32 pb-14 md:pb-20">
+      <div className="section-shell">
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-8 items-end">
+          <div className="lg:col-span-8 space-y-6">
+            <p className="reveal-item label-mono">
+              yusrah.mohammed // portfolio
+            </p>
+            <h1 className="reveal-item font-display text-4xl sm:text-5xl md:text-[3.4rem] font-semibold text-ink leading-[1.08] max-w-3xl">
+              Software developer building web &amp; blockchain products.
+            </h1>
+            <p className="reveal-item text-muted text-base md:text-lg leading-relaxed max-w-xl">
+              Frontend is my foundation. I use it to ship practical interfaces,
+              dashboards, and onchain experiences people can actually use.
+            </p>
+            <div className="reveal-item flex flex-wrap gap-3 pt-1">
+              <a href="/projects">
+                <Button
+                  title="View work"
+                  containerClass="bg-ink text-white hover:bg-accent"
+                />
+              </a>
+              <a href="mailto:mohammedyusi6@gmail.com">
+                <Button
+                  title="Get in touch"
+                  containerClass="bg-paper text-ink border border-line hover:border-ink"
+                />
+              </a>
+            </div>
+          </div>
+
+          <aside className="reveal-item lg:col-span-4 border border-line bg-paper rounded-lg p-5 md:p-6 space-y-4">
+            <p className="label-mono">status</p>
+            <dl className="space-y-3 font-mono text-sm">
+              <div className="flex justify-between gap-4 border-b border-line pb-3">
+                <dt className="text-muted">role</dt>
+                <dd className="text-ink text-right">Software Developer</dd>
+              </div>
+              <div className="flex justify-between gap-4 border-b border-line pb-3">
+                <dt className="text-muted">based</dt>
+                <dd className="text-ink text-right">Kaduna, NG</dd>
+              </div>
+              <div className="flex justify-between gap-4 border-b border-line pb-3">
+                <dt className="text-muted">focus</dt>
+                <dd className="text-ink text-right">Web · Web3</dd>
+              </div>
+              <div className="flex justify-between gap-4">
+                <dt className="text-muted">stack</dt>
+                <dd className="text-ink text-right">React · TS · Next</dd>
+              </div>
+            </dl>
+          </aside>
         </div>
       </div>
-      <img
-        src="/Hero.jpeg"
-        alt="Yusrah Portrait"
-        className="hero-img md:h-100 rounded-lg"
-      />
     </section>
   );
 };
+
 export default Hero;

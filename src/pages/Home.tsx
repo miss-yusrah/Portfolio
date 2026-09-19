@@ -1,18 +1,17 @@
 import Hero from "../components/shared/Hero.tsx";
-import About from "../components/shared/About.tsx";
-import Contact from "../components/shared/Contact.tsx";
-import Skills from "../components/shared/Skills.tsx";
-import GridSec from "../components/shared/GridSec.tsx";
+import SelectedWork from "../components/shared/SelectedWork.tsx";
+import AboutTeaser from "../components/shared/AboutTeaser.tsx";
+import ContactStrip from "../components/shared/ContactStrip.tsx";
 
 const Home = () => {
-    return (
-        <div>
-            <Hero/>
-            <About/>
-            <Skills/>
-            <GridSec/>
-            <Contact/>
-        </div>
-    )
-}
-export default Home
+  return (
+    <div>
+      <Hero />
+      <AboutTeaser />
+      <SelectedWork />
+      <ContactStrip />
+    </div>
+  );
+};
+
+export default Home;

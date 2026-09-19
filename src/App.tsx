@@ -1,5 +1,6 @@
 import {Routes, Route} from 'react-router-dom'
 import Home from './pages/Home'
+import About from './pages/About'
 import Experience from "./pages/Experience.tsx";
 import Projects from "./pages/Projects.tsx";
 import Events from "./pages/Events.tsx";
@@ -15,6 +16,7 @@ const App = () => {
             <Routes>
                 <Route element={<PageLayout />} >
                     <Route  path="/" element={<Home/>} />
+                    <Route  path="/about" element={<About/>} />
                     <Route  path="/experience" element={<Experience/>} />
                     <Route  path="/projects" element={<Projects/>} />
                     <Route  path="/events" element={<Events/>} />

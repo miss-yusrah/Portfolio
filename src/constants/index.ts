@@ -1,54 +1,84 @@
 export const navLinks = [
-  { label: "Home", link: "/" },
+  { label: "About", link: "/about" },
+  { label: "Work", link: "/projects" },
   { label: "Experience", link: "/experience" },
-  { label: "Projects", link: "/projects" },
   { label: "Events", link: "/events" },
 ];
 
 export const projectData = [
   {
-    project_title: "Quiz App (Anatomy & Physiology)",
-    institution: "Personal Project",
-    date: "2025",
-    description: [
-      "Interactive quiz application built for teaching and test prep.",
-      "Focused on creating a user-friendly interface for students to learn complex subjects.",
-    ],
-    images: ["/Quiz.png"],
+    project_title: "GrantOS",
+    category: "Blockchain · Grants · Infrastructure",
+    description:
+      "Grant infrastructure for milestone-based funding. Transparent escrow flows, onboarding paths, and tools for exploring live grants onchain.",
+    tags: ["Next.js", "TypeScript", "Web3 UX", "Arbitrum"],
+    link: "https://www.grantos.xyz/",
+    image: "/projects/grantos.png",
   },
   {
-    project_title: "Jeteeah (Snake Game)",
-    institution: "Team Project",
-    date: "2025",
-    description: [
-      "A modern, Web3-powered Snake game built with Next.js.",
-      "Featuring classic gameplay mechanics enhanced with blockchain integration, token rewards, customizable skins, and achievement systems.",
-    ],
-    images: ["/Game.png"],
+    project_title: "VaultDAO",
+    category: "Open Source · Web3 · Stellar",
+    description:
+      "Treasury and coordination tooling for DAOs. Balances, proposals, and day-to-day treasury actions in one place.",
+    tags: ["React", "Next.js", "Stellar", "Open Source"],
+    link: "https://vault-dao-tawny.vercel.app",
+    image: "/projects/vaultdao.png",
   },
-
   {
-  project_title: "TERI-FI",
-  institution: "Team Project",
-  date: "2025",
-  description: [
-    "A Web3-based crypto transfer solution that enables users to send crypto to any phone number.",
-    "Worked as part of a team to build and style responsive frontend screens for a seamless mobile-first user experience.",
-  ],
-  images: ["/terifi.png"],
-},
-
+    project_title: "TrustBridge",
+    category: "Payments · Stellar · Open Source",
+    description:
+      "Bridges open-source work to Stellar payouts. Maps GitHub contributors to funded addresses and surfaces trustline readiness before Wave payouts.",
+    tags: ["Next.js", "TypeScript", "Stellar", "GitHub OAuth"],
+    link: "https://trustbridge-dashboard.vercel.app",
+    image: "/projects/trustbridge.png",
+  },
   {
-  project_title: "Afram",
-  institution: "Team Project",
-  date: "2026",
-  description: [
-    "A stablecoin-powered payment platform built on the Stellar (XLM) network.",
-    "Worked as part of a frontend team to build responsive UI screens for buying crypto, paying bills, and sending money using cNGN.",
-  ],
-  images: ["/Afram.png"],
-},
+    project_title: "Doodle Champion",
+    category: "Product · Game · Interactive UI",
+    description:
+      "A browser drawing duel: attack on one half of the page, defend on the other. Built for feel: canvas, rounds, and a playful game shell.",
+    tags: ["React", "Canvas", "TypeScript"],
+    link: "https://doddle-champion.vercel.app",
+    image: "/projects/doodle.png",
+  },
+  {
+    project_title: "Fruit Rush",
+    category: "Web3 · Game · Celo",
+    description:
+      "A fruit-slicing browser game exploring scoring, gameplay feel, and onchain ownership on Celo.",
+    tags: ["React", "TypeScript", "Celo", "Game UI"],
+    link: "https://fruit-rush-zeta.vercel.app/",
+    image: "/projects/fruitrush.png",
+  },
+];
 
+export const whatIDo = [
+  {
+    title: "Web applications",
+    text: "Product interfaces, dashboards, and full frontend flows that people can use day to day.",
+  },
+  {
+    title: "Blockchain products",
+    text: "Wallets, payouts, grants, and onchain UX. Making decentralized systems understandable.",
+  },
+  {
+    title: "Frontend engineering",
+    text: "React, TypeScript, Next.js, and careful UI work from design to deployment.",
+  },
+  {
+    title: "Open source & teams",
+    text: "Issues, PRs, shared codebases, and shipping with other builders.",
+  },
+];
+
+export const exploring = [
+  "Blockchain infrastructure",
+  "Smart contracts",
+  "Open-source development",
+  "Product engineering",
+  "Stellar / Soroban",
+  "Web3 UX",
 ];
 
 export const experienceData = [
@@ -58,16 +88,15 @@ export const experienceData = [
     location: "Kaduna State, Nigeria",
     date: "February 2025 – Present",
     description: [
-      "Build and style responsive, user-friendly web interfaces using HTML, CSS, JavaScript, TypeScript, React, and Tailwind CSS.",
-      "Collaborate with designers and developers in team-based projects to translate UI designs into functional, accessible web applications.",
-      "Use Git and GitHub for version control, collaboration, and project deployment in a real-world development environment.",
-      "Develop internal and client-facing projects with a strong focus on usability, performance, and responsive design across devices.",
-      "Continuously improve frontend development skills through hands-on practice, hackathons, and coding challenges.",
+      "Build and ship web interfaces with HTML, CSS, JavaScript, TypeScript, React, and Tailwind CSS.",
+      "Work with designers and developers to turn ideas into production-ready products.",
+      "Use Git and GitHub for collaboration, review, and deployment.",
+      "Contribute to internal and client-facing work across usability and performance.",
     ],
     images: ["/pic1.jpeg", "/pic2.jpeg", "/pic3.jpeg", "/pic4.jpeg", "/pic5.jpg"],
   },
 ];
- 
+
 export const skillIcons = [
   { icon: "/icons/1.png" },
   { icon: "/icons/2.png" },
@@ -83,13 +112,6 @@ export const skillIcons = [
   { icon: "/icons/18.png" },
   { icon: "/icons/19.png" },
 ];
-
-export const ProjectPics = [
-  { pic: "/Quiz.png" },
-  { pic: "/Game.png" },
-  { pic: "/Afram.png"},
-  { pic: "/terifi.png"},
-]
 
 export const picPics = [
   { pic: "/pic1.jpeg" },
@@ -110,7 +132,3 @@ export const eventPics = [
   { pic: "/event8.jpeg" },
   { pic: "/event9.jpeg" },
 ];
-
-
-
-

@@ -5,49 +5,61 @@ import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (
-    <footer className="bg-primary text-white px-3.5 py-10 md:p-14 space-y-14">
-      <div className="flex flex-col md:flex-row md:items-center justify-between gap-8  ">
-        <nav className="flex flex-col md:flex-row gap-5 md:gap-6 ">
-          {navLinks.map((item, index) => (
-            <a href={item.link} key={index}>
-              <p className="font-normal text-[16px] hover:scale-105">
-                {item.label}
-              </p>
+    <footer className="bg-fog text-ink border-t border-ink py-8 md:py-10">
+      <div className="section-shell flex flex-col sm:flex-row sm:items-center justify-between gap-6">
+        <p className="font-mono text-sm text-muted">
+          © 2026 Yusrah Mohammed
+        </p>
+        <nav className="flex flex-wrap gap-x-5 gap-y-2">
+          {navLinks.map((item) => (
+            <a
+              href={item.link}
+              key={item.link}
+              className="font-mono text-xs text-muted hover:text-ink"
+            >
+              {item.label}
             </a>
           ))}
         </nav>
-        <div className="flex gap-8">
+        <div className="flex flex-wrap gap-4 text-ink">
           <Link
             to="https://www.linkedin.com/in/yusrah-mohammed-513133312/"
             target="_blank"
+            aria-label="LinkedIn"
           >
-            <FaLinkedin className="text-white size-6" />
+            <FaLinkedin className="size-4" />
+          </Link>
+          <Link
+            to="https://github.com/miss-yusrah"
+            target="_blank"
+            aria-label="GitHub"
+          >
+            <FaGithub className="size-4" />
+          </Link>
+          <Link to="https://x.com/MohammedNusee" target="_blank" aria-label="X">
+            <FaXTwitter className="size-4" />
+          </Link>
+          <Link
+            to="https://medium.com/@mohammedyusi6"
+            target="_blank"
+            aria-label="Medium"
+          >
+            <FaMedium className="size-4" />
           </Link>
           <Link
             to="https://discord.com/users/1462768883978080271"
             target="_blank"
+            aria-label="Discord"
           >
-            <FaDiscord className="text-white size-6" />
+            <FaDiscord className="size-4" />
           </Link>
-          <Link to="https://x.com/MohammedNusee" target="_blank">
-            <FaXTwitter className="text-white  size-6" />
-          </Link>
-          <Link to="https://github.com/miss-yusrah" target="_blank">
-            <FaGithub className="text-white size-6" />
-          </Link>
-          <Link to="https://t.me/miss_nusee" target="_blank">
-            <FaTelegram className="text-white  size-6" />
-          </Link>
-          <Link to="https://medium.com/@mohammedyusi6" target="_blank">
-            <FaMedium className="text-white  size-6" />
+          <Link to="https://t.me/miss_nusee" target="_blank" aria-label="Telegram">
+            <FaTelegram className="size-4" />
           </Link>
         </div>
       </div>
-      <hr className="text-secondary" />
-      <p className="text-sm text-center">
-        Yusrah Mohammed © 2026. All Right Reserved
-      </p>
     </footer>
   );
 };
+
 export default Footer;

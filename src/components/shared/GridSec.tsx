@@ -1,5 +1,8 @@
 import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
+import { ScrollTrigger } from "gsap/all";
+
+gsap.registerPlugin(ScrollTrigger);
 
 const GridSec = () => {
   useGSAP(() => {
@@ -7,97 +10,82 @@ const GridSec = () => {
       scrollTrigger: {
         trigger: ".grid-section",
         start: "top 80%",
-        end: "bottom 20%",
         toggleActions: "play none none reverse",
       },
       opacity: 0,
-      y: 50,
-      stagger: 0.2,
-      duration: 0.8,
+      y: 32,
+      stagger: 0.12,
+      duration: 0.65,
       ease: "power2.out",
     });
   }, []);
 
- return (
-  <section className="grid-section my-5 md:my-10 md:mx-20 md:p-10">
-    <div className="grid grid-cols-1 md:grid-cols-2 gap-5 md:gap-8">
-      
-      {/* Language Skills */}
-      <div className="grid-item bg-tetiary max-w-3xl md:h-44 px-9 py-6">
-        <h3 className="text-primary text-3xl font-bold">Language Skills</h3>
-        <p className="text-xl text-secondary">
-          English Language (Fluent – written & spoken)
-        </p>
-      </div>
+  return (
+    <section className="grid-section py-6 md:py-10">
+      <div className="section-shell">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-6">
+          <div className="grid-item bg-tetiary rounded-2xl px-6 py-6 md:px-8 md:py-7">
+            <h3 className="text-primary text-xl sm:text-2xl font-bold">
+              Languages
+            </h3>
+            <p className="text-base md:text-lg text-secondary mt-2">
+              English (fluent, written and spoken)
+            </p>
+          </div>
 
-      {/* Leadership & Collaboration Experience */}
-      <div className="grid-item bg-tetiary max-w-3xl md:h-[326px] px-9 py-6 space-y-6">
-        <h3 className="text-primary text-3xl font-bold">
-          Leadership & <br /> Collaboration Experience
-        </h3>
+          <div className="grid-item bg-tetiary rounded-2xl px-6 py-6 md:px-8 md:py-7 space-y-4">
+            <h3 className="text-primary text-xl sm:text-2xl font-bold">
+              Work & collaboration
+            </h3>
+            <div>
+              <p className="text-base md:text-lg text-secondary font-bold">
+                Frontend Developer
+              </p>
+              <p className="text-secondary text-sm md:text-base mt-1">
+                CoLAB Innovation Hub, Kaduna. Building responsive web apps with
+                designers and developers using React, TypeScript, and Tailwind.
+              </p>
+            </div>
+            <div>
+              <p className="text-base md:text-lg text-secondary font-bold">
+                Team project work
+              </p>
+              <p className="text-secondary text-sm md:text-base mt-1">
+                Shipped UIs in small teams, managed work through Git/GitHub, and
+                helped get releases out the door.
+              </p>
+            </div>
+          </div>
 
-        <div>
-          <p className="text-xl text-secondary font-bold">
-            Frontend Developer Trainee
-          </p>
-          <p className="text-secondary">
-            Colab Innovation Hub, Kaduna — collaborating with designers and
-            developers to build responsive, user-focused web applications using
-            React, TypeScript, and Tailwind CSS.
-          </p>
-        </div>
+          <div className="grid-item bg-tetiary rounded-2xl px-6 py-6 md:px-8 md:py-7 space-y-3">
+            <h3 className="text-primary text-xl sm:text-2xl font-bold">
+              Community
+            </h3>
+            <p className="text-base md:text-lg text-secondary font-bold">
+              NDCN volunteer
+            </p>
+            <p className="text-secondary text-sm md:text-base">
+              Nutrition and Dietetics Community of Nigeria. Outreach on maternal
+              and child nutrition across Kaduna State.
+            </p>
+          </div>
 
-        <div>
-          <p className="text-xl text-secondary font-bold">
-            Team-Based Project Contributor
-          </p>
-          <p className="text-secondary">
-            Worked in small development teams (5+ members) on internal and client
-            projects, contributing to UI implementation, version control with
-            Git/GitHub, and deployment workflows.
-          </p>
-        </div>
-      </div>
-
-      {/* Volunteering & Community Service */}
-      <div className="grid-item bg-tetiary max-w-3xl md:h-[326px] px-9 py-6 space-y-6 md:-mt-40">
-        <h3 className="text-primary text-3xl font-bold">
-          Volunteering & Community <br /> Engagement
-        </h3>
-
-        <div>
-          <p className="text-xl text-secondary font-bold">
-            Community Health & Nutrition Outreach Volunteer
-          </p>
-          <p className="text-secondary pt-3">
-            Nutrition and Dietetics Community of Nigeria (NDCN) — actively
-            involved in public health outreach programs focused on maternal and
-            child nutrition, health education, and community well-being across
-            Kaduna State.
-          </p>
-        </div>
-      </div>
-
-      {/* Professional Interests & Affiliations */}
-      <div className="grid-item bg-tetiary max-w-3xl md:h-44 px-9 py-6 -mt-2">
-        <h3 className="text-primary text-3xl font-bold">
-          Professional Focus & <br /> Interests
-        </h3>
-        <div>
-          <p className="text-xl text-secondary font-bold pt-2">
-            Frontend Development & Digital Health
-          </p>
-          <p className="text-secondary">
-            Strong interest in building accessible, responsive web solutions,
-            especially within health, community-focused, and social-impact
-            domains.
-          </p>
+          <div className="grid-item bg-tetiary rounded-2xl px-6 py-6 md:px-8 md:py-7 space-y-3">
+            <h3 className="text-primary text-xl sm:text-2xl font-bold">
+              Focus
+            </h3>
+            <p className="text-base md:text-lg text-secondary font-bold">
+              Frontend product work
+            </p>
+            <p className="text-secondary text-sm md:text-base">
+              Interfaces for products, dashboards, and tools that need to work
+              well on both phone and desktop.
+            </p>
+          </div>
         </div>
       </div>
-
-    </div>
-  </section>
-);
-
+    </section>
+  );
 };
+
 export default GridSec;
