@@ -2,20 +2,41 @@
 
 @import "tailwindcss";
 
+:root {
+  --ink: #0b0d10;
+  --muted: #5f6570;
+  --fog: #f7f8fa;
+  --paper: #ffffff;
+  --line: #e4e7ec;
+  --accent: #1b4d3e;
+  --accent-soft: #e8f0ec;
+}
+
+html.dark {
+  --ink: #eef0f3;
+  --muted: #9aa1ab;
+  --fog: #0c0e12;
+  --paper: #15181e;
+  --line: #2a2f38;
+  --accent: #5fbfa0;
+  --accent-soft: #1a2a24;
+  color-scheme: dark;
+}
+
 @theme {
-  --color-ink: #0b0d10;
-  --color-muted: #5f6570;
-  --color-fog: #f7f8fa;
-  --color-paper: #ffffff;
-  --color-line: #e4e7ec;
-  --color-accent: #1b4d3e;
-  --color-accent-soft: #e8f0ec;
+  --color-ink: var(--ink);
+  --color-muted: var(--muted);
+  --color-fog: var(--fog);
+  --color-paper: var(--paper);
+  --color-line: var(--line);
+  --color-accent: var(--accent);
+  --color-accent-soft: var(--accent-soft);
   --font-display: "IBM Plex Sans", sans-serif;
   --font-body: "IBM Plex Sans", sans-serif;
   --font-mono: "IBM Plex Mono", monospace;
-  --color-primary: #0b0d10;
-  --color-secondary: #5f6570;
-  --color-tetiary: #f7f8fa;
+  --color-primary: var(--ink);
+  --color-secondary: var(--muted);
+  --color-tetiary: var(--fog);
 }
 
 *,
@@ -32,10 +53,11 @@ body {
   margin: 0;
   padding: 0;
   font-family: var(--font-body);
-  background: var(--color-fog);
-  color: var(--color-ink);
+  background: var(--fog);
+  color: var(--ink);
   overflow-x: hidden;
   -webkit-text-size-adjust: 100%;
+  transition: background-color 0.2s ease, color 0.2s ease;
 }
 
 h1,
@@ -81,9 +103,9 @@ a {
 }
 
 .scrolled {
-  background: rgba(247, 248, 250, 0.96) !important;
+  background: color-mix(in srgb, var(--fog) 96%, transparent) !important;
   backdrop-filter: blur(12px);
-  border-bottom-color: var(--color-ink) !important;
+  border-bottom-color: var(--ink) !important;
   border-bottom-width: 1px;
 }
 
@@ -92,5 +114,5 @@ a {
   font-size: 0.75rem;
   letter-spacing: 0.04em;
   text-transform: uppercase;
-  color: var(--color-muted);
+  color: var(--muted);
 }

@@ -19,7 +19,7 @@ const ContactStrip = () => {
           </div>
           <a
             href="mailto:mohammedyusi6@gmail.com"
-            className="inline-flex items-center justify-center bg-ink text-white px-5 py-3 rounded-md text-sm font-medium hover:bg-accent transition-colors shrink-0"
+            className="inline-flex items-center justify-center bg-ink text-fog px-5 py-3 rounded-md text-sm font-medium hover:bg-accent hover:text-fog transition-colors shrink-0"
           >
             mohammedyusi6@gmail.com
           </a>

@@ -1,4 +1,3 @@
-import { navLinks } from "../../constants";
 import { FaGithub, FaTelegram, FaLinkedin, FaDiscord } from "react-icons/fa";
 import { FaXTwitter, FaMedium } from "react-icons/fa6";
 import { Link } from "react-router-dom";
@@ -10,18 +9,8 @@ const Footer = () => {
         <p className="font-mono text-sm text-muted">
           © 2026 Yusrah Mohammed
         </p>
-        <nav className="flex flex-wrap gap-x-5 gap-y-2">
-          {navLinks.map((item) => (
-            <a
-              href={item.link}
-              key={item.link}
-              className="font-mono text-xs text-muted hover:text-ink"
-            >
-              {item.label}
-            </a>
-          ))}
-        </nav>
-        <div className="flex flex-wrap gap-4 text-ink">
+
+        <div className="flex flex-wrap items-center gap-4 text-ink">
           <Link
             to="https://www.linkedin.com/in/yusrah-mohammed-513133312/"
             target="_blank"

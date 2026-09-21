@@ -1,5 +1,6 @@
 import { navLinks } from "../../constants";
 import Button from "../ui/Button.tsx";
+import ThemeToggle from "../ui/ThemeToggle.tsx";
 import { CgMenuRight } from "react-icons/cg";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
 import { FaXTwitter } from "react-icons/fa6";
@@ -62,7 +63,7 @@ const Navbar = () => {
               yusrah.dev
             </Link>
 
-            <nav className="hidden md:flex items-center gap-7">
+            <nav className="hidden md:flex items-center gap-5">
               {navLinks.map((item) => (
                 <a
                   href={item.link}
@@ -75,19 +76,23 @@ const Navbar = () => {
               <a href="mailto:mohammedyusi6@gmail.com">
                 <Button
                   title="Get in touch"
-                  containerClass="bg-ink text-white hover:bg-accent text-sm px-4 py-2"
+                  containerClass="bg-ink text-fog hover:bg-accent hover:text-fog text-sm px-4 py-2"
                 />
               </a>
+              <ThemeToggle />
             </nav>
 
-            <button
-              type="button"
-              className="md:hidden p-1 text-ink"
-              aria-label="Open menu"
-              onClick={() => setIsOpen(true)}
-            >
-              <CgMenuRight className="size-7" />
-            </button>
+            <div className="md:hidden flex items-center gap-2">
+              <ThemeToggle />
+              <button
+                type="button"
+                className="p-1 text-ink"
+                aria-label="Open menu"
+                onClick={() => setIsOpen(true)}
+              >
+                <CgMenuRight className="size-7" />
+              </button>
+            </div>
           </div>
         </div>
       </header>
@@ -137,7 +142,7 @@ const Navbar = () => {
           <div className="space-y-5 pt-8">
             <a
               href="mailto:mohammedyusi6@gmail.com"
-              className="flex w-full items-center justify-center bg-ink text-white px-5 py-3.5 rounded-md text-sm font-medium"
+              className="flex w-full items-center justify-center bg-ink text-fog px-5 py-3.5 rounded-md text-sm font-medium"
             >
               Get in touch
             </a>

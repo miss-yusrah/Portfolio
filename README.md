@@ -1,6 +1,8 @@
 # Yusrah Mohammed Portfolio
 
-Personal portfolio site for my work across web and blockchain products.
+Personal site for my work as a software developer: web applications, digital products, and blockchain-powered experiences.
+
+Built with React, TypeScript, Vite, and Tailwind CSS.
 
 ## Run locally
 
@@ -15,4 +17,9 @@ Open [http://localhost:5173](http://localhost:5173).
 
 ```bash
 npm run build
+npm run preview
 ```
+
+## License
+
+[MIT](./LICENSE)

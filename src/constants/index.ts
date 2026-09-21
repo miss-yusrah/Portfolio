@@ -92,6 +92,7 @@ export const stacks = [
   {
     title: "Blockchain",
     items: [
+      "Rust",
       "Solidity",
       "Foundry",
       "Wagmi",

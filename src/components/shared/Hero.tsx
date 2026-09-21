@@ -25,7 +25,7 @@ const Hero = () => {
               <a href="/projects">
                 <Button
                   title="View work"
-                  containerClass="bg-ink text-white hover:bg-accent"
+                  containerClass="bg-ink text-fog hover:bg-accent hover:text-fog"
                 />
               </a>
               <a href="mailto:mohammedyusi6@gmail.com">

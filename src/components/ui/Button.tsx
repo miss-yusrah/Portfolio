@@ -10,7 +10,7 @@ const Button = ({ containerClass, title, handleClick }: ButtonProps) => {
     <button
       type="button"
       className={`inline-flex items-center justify-center px-5 py-3 rounded-md text-[15px] font-medium transition-colors ${
-        containerClass ?? "bg-ink text-white"
+        containerClass ?? "bg-ink text-fog"
       }`}
       onClick={handleClick}
     >

@@ -1,11 +1,16 @@
+import { useRef } from "react";
 import { experienceData } from "../constants";
-import { useSectionReveal } from "../hooks/useSectionReveal";
+import { useItemReveal } from "../hooks/useSectionReveal";
 
 const Experience = () => {
-  useSectionReveal(".experience-page");
+  const pageRef = useRef<HTMLElement>(null);
+  useItemReveal(pageRef);
 
   return (
-    <section className="experience-page pt-28 md:pt-36 pb-16 md:pb-24">
+    <section
+      ref={pageRef}
+      className="experience-page pt-28 md:pt-36 pb-16 md:pb-24"
+    >
       <div className="section-shell space-y-10 md:space-y-14">
         <div className="reveal-item max-w-2xl space-y-3">
           <p className="label-mono">experience</p>

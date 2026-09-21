@@ -1,11 +1,16 @@
+import { useRef } from "react";
 import { projectData } from "../constants";
-import { useSectionReveal } from "../hooks/useSectionReveal";
+import { useItemReveal } from "../hooks/useSectionReveal";
 
 const Projects = () => {
-  useSectionReveal(".projects-page");
+  const pageRef = useRef<HTMLElement>(null);
+  useItemReveal(pageRef);
 
   return (
-    <section className="projects-page pt-28 md:pt-36 pb-16 md:pb-24">
+    <section
+      ref={pageRef}
+      className="projects-page pt-28 md:pt-36 pb-16 md:pb-24"
+    >
       <div className="section-shell space-y-10 md:space-y-14">
         <div className="reveal-item max-w-2xl space-y-3">
           <p className="label-mono">work / archive</p>
@@ -63,7 +68,7 @@ const Projects = () => {
                   href={project.link}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="inline-flex items-center gap-2 bg-ink text-white px-5 py-3 rounded-md text-sm font-medium hover:bg-accent transition-colors"
+                  className="inline-flex items-center gap-2 bg-ink text-fog px-5 py-3 rounded-md text-sm font-medium hover:bg-accent hover:text-fog transition-colors"
                 >
                   View live project
                   <span aria-hidden="true">↗</span>
