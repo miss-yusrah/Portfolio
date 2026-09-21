@@ -13,8 +13,8 @@ const ContactStrip = () => {
               Have something to build?
             </h2>
             <p className="text-muted text-base max-w-md">
-              Open to product work, Web3 collaboration, and interesting
-              engineering problems.
+              Open to web apps, product work, frontend engineering, and Web3
+              collaboration.
             </p>
           </div>
           <a

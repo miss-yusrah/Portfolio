@@ -55,25 +55,69 @@ export const projectData = [
 
 export const whatIDo = [
   {
-    title: "Web applications",
-    text: "Product interfaces, dashboards, and full frontend flows that people can use day to day.",
+    title: "Web Development",
+    text: "Responsive websites, web applications, dashboards, and interactive interfaces.",
   },
   {
-    title: "Blockchain products",
-    text: "Wallets, payouts, grants, and onchain UX. Making decentralized systems understandable.",
+    title: "Frontend Engineering",
+    text: "React, TypeScript, Next.js, UI implementation, responsive design, and frontend architecture.",
   },
   {
-    title: "Frontend engineering",
-    text: "React, TypeScript, Next.js, and careful UI work from design to deployment.",
+    title: "Product Development",
+    text: "Turning ideas into working products across frontend, APIs, databases, and deployment.",
   },
   {
-    title: "Open source & teams",
-    text: "Issues, PRs, shared codebases, and shipping with other builders.",
+    title: "Blockchain & Web3",
+    text: "Blockchain apps, wallet integrations, smart-contract ecosystems, and Web3 product UX.",
+  },
+];
+
+export const stacks = [
+  {
+    title: "Frontend",
+    items: [
+      "HTML",
+      "CSS",
+      "JavaScript",
+      "TypeScript",
+      "React",
+      "Next.js",
+      "Tailwind CSS",
+    ],
+  },
+  {
+    title: "Backend & Data",
+    items: ["Node.js", "APIs", "Supabase", "PostgreSQL", "Prisma"],
+  },
+  {
+    title: "Blockchain",
+    items: [
+      "Solidity",
+      "Foundry",
+      "Wagmi",
+      "Viem",
+      "RainbowKit",
+      "Stellar / Soroban",
+      "Cairo / Starknet",
+    ],
+  },
+  {
+    title: "Tools & Workflow",
+    items: [
+      "Git",
+      "GitHub",
+      "Vercel",
+      "Figma",
+      "Linux",
+      "Open Source",
+      "Code Review",
+      "Deployment",
+    ],
   },
 ];
 
 export const exploring = [
-  "Blockchain infrastructure",
+  "Backend services",
   "Smart contracts",
   "Open-source development",
   "Product engineering",
@@ -83,17 +127,80 @@ export const exploring = [
 
 export const experienceData = [
   {
-    project_title: "Frontend Developer",
-    institution: "CoLAB Innovation Hub",
-    location: "Kaduna State, Nigeria",
-    date: "February 2025 – Present",
-    description: [
-      "Build and ship web interfaces with HTML, CSS, JavaScript, TypeScript, React, and Tailwind CSS.",
-      "Work with designers and developers to turn ideas into production-ready products.",
-      "Use Git and GitHub for collaboration, review, and deployment.",
-      "Contribute to internal and client-facing work across usability and performance.",
+    id: "01",
+    title: "Frontend Developer → Software Developer",
+    org: "CoLAB Innovation Hub",
+    date: "2025 to Present",
+    summary:
+      "Started through frontend engineering: building responsive interfaces and turning designs into working products. Work expanded into APIs, databases, deployment, Web3 integrations, and product development.",
+    tags: [
+      "React",
+      "JavaScript",
+      "TypeScript",
+      "Next.js",
+      "Tailwind CSS",
+      "Git",
+      "GitHub",
+    ],
+    highlights: [
+      "Built responsive web interfaces and interactive apps from designs and product requirements.",
+      "Developed reusable UI components with React and TypeScript.",
+      "Collaborated on team projects using Git and GitHub workflows.",
+      "Expanded into backend services, APIs, databases, and deployment.",
+      "Started building blockchain applications and experimenting with smart-contract ecosystems.",
+      "Contributed to mentoring and technical learning for other developers.",
     ],
     images: ["/pic1.jpeg", "/pic2.jpeg", "/pic3.jpeg", "/pic4.jpeg", "/pic5.jpg"],
+  },
+  {
+    id: "02",
+    title: "Independent Software & Product Development",
+    org: "Personal & collaborative builds",
+    date: "2024 to Present",
+    summary:
+      "Building and shipping web applications, developer tools, and blockchain-powered products while growing from frontend into fuller product work.",
+    tags: ["Next.js", "Supabase", "Web3", "Product"],
+    highlights: [
+      "Built Tally, a group expense app with Next.js and Supabase.",
+      "Worked on KudiPay, a Web3 remittance experience with wallet connectivity.",
+      "Contributed frontend to GrantOS, a blockchain grant management platform.",
+      "Shipped live work across Stellar, Celo, and related ecosystems (VaultDAO, TrustBridge, Fruit Rush, and more).",
+      "Worked with auth, databases, APIs, deployment, wallet integrations, and modern frontend tooling.",
+    ],
+    images: [],
+  },
+  {
+    id: "03",
+    title: "Open Source & Community Development",
+    org: "Open source & Web3 communities",
+    date: "2025 to Present",
+    summary:
+      "Contributing to open-source projects and developer communities: existing codebases, issues, branches, PRs, and collaborative shipping.",
+    tags: ["GitHub", "Open Source", "PRs", "Issues"],
+    highlights: [
+      "Contributed to open-source Web3 and tooling projects.",
+      "Worked through GitHub issues, pull requests, and shared codebases.",
+      "Collaborated with contributors and team-based development workflows.",
+      "Took part in hackathons and builder programs.",
+    ],
+    images: [],
+  },
+  {
+    id: "04",
+    title: "Developer Educator & Mentor",
+    org: "CoLAB / Code School",
+    date: "2025 to Present",
+    summary:
+      "Teaching beginners web development fundamentals and helping learners build confidence with HTML, CSS, JavaScript, Git, and GitHub.",
+    tags: ["Teaching", "HTML", "CSS", "JavaScript", "Git"],
+    highlights: [
+      "Designed and delivered beginner-friendly web development lessons.",
+      "Guided students through practical coding exercises and projects.",
+      "Introduced Git and GitHub workflows to new developers.",
+      "Mentored learners on their first frontend projects.",
+      "Broke down technical concepts for different experience levels.",
+    ],
+    images: [],
   },
 ];
 

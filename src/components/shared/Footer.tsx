@@ -36,7 +36,7 @@ const Footer = () => {
           >
             <FaGithub className="size-4" />
           </Link>
-          <Link to="https://x.com/MohammedNusee" target="_blank" aria-label="X">
+          <Link to="https://x.com/nuseeX" target="_blank" aria-label="X">
             <FaXTwitter className="size-4" />
           </Link>
           <Link

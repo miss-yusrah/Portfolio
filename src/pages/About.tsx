@@ -6,7 +6,7 @@ import {
 } from "react-icons/fa";
 import { FaXTwitter, FaMedium } from "react-icons/fa6";
 import { Link } from "react-router-dom";
-import { exploring, whatIDo } from "../constants";
+import { exploring, stacks, whatIDo } from "../constants";
 import { useSectionReveal } from "../hooks/useSectionReveal";
 
 const socials = [
@@ -20,7 +20,7 @@ const socials = [
     icon: FaGithub,
     label: "GitHub",
   },
-  { to: "https://x.com/MohammedNusee", icon: FaXTwitter, label: "X" },
+  { to: "https://x.com/nuseeX", icon: FaXTwitter, label: "X" },
   {
     to: "https://medium.com/@mohammedyusi6",
     icon: FaMedium,
@@ -37,6 +37,7 @@ const socials = [
 const AboutPage = () => {
   useSectionReveal(".about-intro");
   useSectionReveal(".about-what");
+  useSectionReveal(".about-stacks");
   useSectionReveal(".about-explore");
 
   return (
@@ -44,9 +45,12 @@ const AboutPage = () => {
       <div className="section-shell space-y-16 md:space-y-20">
         <section className="about-intro space-y-10 md:space-y-12">
           <header className="reveal-item max-w-3xl space-y-4">
-            <p className="label-mono">about</p>
+            <p className="label-mono">
+              Software Developer · Frontend Engineer · Web3 Builder
+            </p>
             <h1 className="font-display text-3xl sm:text-4xl md:text-5xl font-semibold text-ink leading-tight">
-              Software developer. Builder across web and blockchain.
+              Building web applications, digital products, and
+              blockchain-powered experiences.
             </h1>
           </header>
 
@@ -60,28 +64,24 @@ const AboutPage = () => {
             </div>
             <div className="reveal-item lg:col-span-8 flex flex-col justify-center space-y-5 text-muted text-base md:text-lg leading-relaxed">
               <p>
-                I’m Yusrah Eruaga Mohammed. I build practical digital products:
-                web applications and blockchain-powered experiences.
+                I’m Yusrah Eruaga Mohammed, a software developer with strong
+                frontend experience. I build practical digital products across
+                the web, and I’m expanding into backend and blockchain.
               </p>
               <p>
-                I started in frontend: learning how to turn designs into
-                responsive, usable interfaces. That curiosity pushed me past the
-                UI into APIs, databases, open-source work, and onchain systems.
+                I started with interfaces: HTML, CSS, JavaScript, React,
+                TypeScript, Next.js. That work pushed me into APIs, databases,
+                deployment, open source, and Web3 product experiences.
               </p>
               <p>
-                Today I ship products around payments, grants, coordination
-                tools, and interactive apps. Frontend is still the craft I trust
-                most. Web3 is where I’m going deeper.
+                Frontend is still my strongest craft. Product development is
+                where I spend more of my time now. Web3 is an area I’m going
+                deeper in, not the only box I sit in.
               </p>
               <p>
-                I’m still learning. The constant is simple: take an idea, figure
-                out how it can work, and build it. I also volunteer with NDCN on
-                maternal and child nutrition outreach in Kaduna. Technology
-                should serve real people.
-              </p>
-              <p>
-                Based in Kaduna, Nigeria. Currently building at CoLAB Innovation
-                Hub and shipping live products across web and blockchain.
+                I also teach beginners and volunteer with NDCN on maternal and
+                child nutrition outreach in Kaduna. Technology should serve real
+                people.
               </p>
               <div className="flex flex-wrap gap-5 pt-1">
                 {socials.map(({ to, icon: Icon, label }) => (
@@ -94,10 +94,10 @@ const AboutPage = () => {
           </div>
         </section>
 
-        <section className="about-what pt-4 md:pt-6">
-          <p className="reveal-item label-mono mb-3">what I do</p>
+        <section className="about-what">
+          <p className="reveal-item label-mono mb-3">what I build</p>
           <h2 className="reveal-item font-display text-2xl md:text-3xl font-semibold text-ink mb-8">
-            How I spend my time
+            Four areas of focus
           </h2>
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
             {whatIDo.map((item, i) => (
@@ -117,10 +117,39 @@ const AboutPage = () => {
           </div>
         </section>
 
+        <section className="about-stacks">
+          <p className="reveal-item label-mono mb-3">stack</p>
+          <h2 className="reveal-item font-display text-2xl md:text-3xl font-semibold text-ink mb-8">
+            How I work technically
+          </h2>
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+            {stacks.map((group) => (
+              <div
+                key={group.title}
+                className="reveal-item border border-line bg-paper rounded-lg p-5 space-y-3"
+              >
+                <h3 className="font-display text-base font-semibold text-ink">
+                  {group.title}
+                </h3>
+                <ul className="flex flex-wrap gap-1.5">
+                  {group.items.map((item) => (
+                    <li
+                      key={item}
+                      className="font-mono text-[11px] text-muted border border-line px-2 py-1 rounded"
+                    >
+                      {item}
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            ))}
+          </div>
+        </section>
+
         <section className="about-explore">
           <p className="reveal-item label-mono mb-3">currently exploring</p>
           <h2 className="reveal-item font-display text-2xl md:text-3xl font-semibold text-ink mb-6">
-            Going deeper into the stack
+            Going deeper
           </h2>
           <ul className="flex flex-wrap gap-2">
             {exploring.map((item) => (

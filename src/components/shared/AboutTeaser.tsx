@@ -13,12 +13,12 @@ const AboutTeaser = () => {
           </div>
           <div className="lg:col-span-7 space-y-5">
             <h2 className="reveal-item font-display text-2xl md:text-3xl font-semibold text-ink max-w-xl">
-              From interfaces into the systems behind them.
+              Frontend first. Growing into products, backend, and Web3.
             </h2>
             <p className="reveal-item text-muted text-base md:text-lg leading-relaxed max-w-xl">
-              I started in frontend: HTML, CSS, JavaScript, React, TypeScript.
-              Then I kept going into product work, open source, and blockchain.
-              I build things people can use, not just demos.
+              I started by shipping interfaces. Now I build digital products
+              end to end where I can: web apps, APIs, data, deployment, and
+              blockchain experiences.
             </p>
             <Link
               to="/about"

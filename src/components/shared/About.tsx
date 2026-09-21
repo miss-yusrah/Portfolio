@@ -18,7 +18,7 @@ const socials = [
     icon: FaGithub,
     label: "GitHub",
   },
-  { to: "https://x.com/MohammedNusee", icon: FaXTwitter, label: "X" },
+  { to: "https://x.com/nuseeX", icon: FaXTwitter, label: "X" },
   {
     to: "https://medium.com/@mohammedyusi6",
     icon: FaMedium,
