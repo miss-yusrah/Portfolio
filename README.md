@@ -4,6 +4,8 @@ Personal site for my work as a software developer: web applications, digital pro
 
 Built with React, TypeScript, Vite, and Tailwind CSS.
 
+**Live:** [https://portfolio-hsj4.onrender.com](https://portfolio-hsj4.onrender.com)
+
 ## Run locally
 
 ```bash
@@ -19,15 +21,6 @@ Open [http://localhost:5173](http://localhost:5173).
 npm run build
 npm run preview
 ```
-
-## Deploy (Render)
-
-This repo includes a [`render.yaml`](./render.yaml) for Render Static Sites.
-
-1. Push to GitHub.
-2. In Render: **New → Blueprint** (or connect the repo as a Static Site).
-3. Use build `npm install && npm run build` and publish path `dist` if prompted.
-4. The SPA rewrite (`/*` → `/index.html`) is already defined in `render.yaml`.
 
 ## License
 
