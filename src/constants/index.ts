@@ -16,6 +16,24 @@ export const projectData = [
     image: "/projects/grantos.png",
   },
   {
+    project_title: "Sorobill",
+    category: "Payments · Stellar · Soroban",
+    description:
+      "Recurring payments on Stellar. Merchants create on-chain plans, subscribers approve once with Freighter, and billing runs on Soroban with USDC, EURC, or any SEP-41 asset.",
+    tags: ["Next.js", "TypeScript", "Soroban", "Freighter"],
+    link: "https://sorobill-app.vercel.app/",
+    image: "/projects/sorobill.png",
+  },
+  {
+    project_title: "Fruit Rush",
+    category: "Web3 · Game · Celo",
+    description:
+      "A fruit-slicing browser game exploring scoring, gameplay feel, and onchain ownership on Celo.",
+    tags: ["React", "TypeScript", "Celo", "Game UI"],
+    link: "https://fruit-rush-zeta.vercel.app/",
+    image: "/projects/fruitrush.png",
+  },
+  {
     project_title: "VaultDAO",
     category: "Open Source · Web3 · Stellar",
     description:
@@ -41,15 +59,6 @@ export const projectData = [
     tags: ["React", "Canvas", "TypeScript"],
     link: "https://doddle-champion.vercel.app",
     image: "/projects/doodle.png",
-  },
-  {
-    project_title: "Fruit Rush",
-    category: "Web3 · Game · Celo",
-    description:
-      "A fruit-slicing browser game exploring scoring, gameplay feel, and onchain ownership on Celo.",
-    tags: ["React", "TypeScript", "Celo", "Game UI"],
-    link: "https://fruit-rush-zeta.vercel.app/",
-    image: "/projects/fruitrush.png",
   },
 ];
 
@@ -165,6 +174,7 @@ export const experienceData = [
       "Built Tally, a group expense app with Next.js and Supabase.",
       "Worked on KudiPay, a Web3 remittance experience with wallet connectivity.",
       "Contributed frontend to GrantOS, a blockchain grant management platform.",
+      "Built Sorobill, recurring payments on Stellar / Soroban with Freighter and SEP-41 assets.",
       "Shipped live work across Stellar, Celo, and related ecosystems (VaultDAO, TrustBridge, Fruit Rush, and more).",
       "Worked with auth, databases, APIs, deployment, wallet integrations, and modern frontend tooling.",
     ],
