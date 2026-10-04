@@ -13,7 +13,7 @@ export const projectData = [
       "Grant infrastructure for milestone-based funding. Transparent escrow flows, onboarding paths, and tools for exploring live grants onchain.",
     tags: ["Next.js", "TypeScript", "Web3 UX", "Arbitrum"],
     link: "https://www.grantos.xyz/",
-    image: "/projects/grantos.png",
+    image: "/shots/grantos.png",
   },
   {
     project_title: "Sorobill",
@@ -22,7 +22,7 @@ export const projectData = [
       "Recurring payments on Stellar. Merchants create on-chain plans, subscribers approve once with Freighter, and billing runs on Soroban with USDC, EURC, or any SEP-41 asset.",
     tags: ["Next.js", "TypeScript", "Soroban", "Freighter"],
     link: "https://sorobill-app.vercel.app/",
-    image: "/projects/sorobill.png",
+    image: "/shots/sorobill.png",
   },
   {
     project_title: "Fruit Rush",
@@ -31,7 +31,7 @@ export const projectData = [
       "A fruit-slicing browser game exploring scoring, gameplay feel, and onchain ownership on Celo.",
     tags: ["React", "TypeScript", "Celo", "Game UI"],
     link: "https://fruit-rush-zeta.vercel.app/",
-    image: "/projects/fruitrush.png",
+    image: "/shots/fruitrush.png",
   },
   {
     project_title: "VaultDAO",
@@ -40,7 +40,7 @@ export const projectData = [
       "Treasury and coordination tooling for DAOs. Balances, proposals, and day-to-day treasury actions in one place.",
     tags: ["React", "Next.js", "Stellar", "Open Source"],
     link: "https://vault-dao-tawny.vercel.app",
-    image: "/projects/vaultdao.png",
+    image: "/shots/vaultdao.png",
   },
   {
     project_title: "TrustBridge",
@@ -49,7 +49,7 @@ export const projectData = [
       "Bridges open-source work to Stellar payouts. Maps GitHub contributors to funded addresses and surfaces trustline readiness before Wave payouts.",
     tags: ["Next.js", "TypeScript", "Stellar", "GitHub OAuth"],
     link: "https://trustbridge-dashboard.vercel.app",
-    image: "/projects/trustbridge.png",
+    image: "/shots/trustbridge.png",
   },
   {
     project_title: "Doodle Champion",
@@ -58,7 +58,7 @@ export const projectData = [
       "A browser drawing duel: attack on one half of the page, defend on the other. Built for feel: canvas, rounds, and a playful game shell.",
     tags: ["React", "Canvas", "TypeScript"],
     link: "https://doddle-champion.vercel.app",
-    image: "/projects/doodle.png",
+    image: "/shots/doodle.png",
   },
 ];
 
